@@ -1,9 +1,11 @@
 package com.github.blackdark.kotlintest
 
-import android.support.v7.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.view.View
 import android.widget.*
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -63,5 +65,15 @@ class MainActivity : AppCompatActivity() {
             imageView.setImageResource(R.drawable.plus)
             isImageChecked = true
         }
+    }
+
+    fun openActivityPart1(view: View) {
+        val intent = Intent(this, AndroidTutorialPart1::class.java)
+        startActivity(intent)
+    }
+
+    fun openFragmentActivity(view: View) {
+        val intent = Intent(this, FragmentActivity::class.java)
+        startActivity(intent)
     }
 }

@@ -1,25 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.github.blackdark.kotlintest">
+    package="com.github.blackdark.kotlintest">
 
-  <application
-    android:allowBackup="true"
-    android:icon="@mipmap/ic_launcher"
-    android:label="@string/app_name"
-    android:supportsRtl="true"
-    android:theme="@style/AppTheme">
-    <activity android:name=".MainActivity">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-        <category android:name="android.intent.category.LAUNCHER"/>
-      </intent-filter>
-    </activity>
-    <activity
-      android:label="@string/title_activity_navigation_drawer"
-      android:name=".NavigationDrawer"
-      android:theme="@style/AppTheme.NoActionBar">
-    </activity>
-  </application>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NavigationDrawer"
+            android:label="@string/title_activity_navigation_drawer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AndroidTutorialPart1"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DisplayMessageActivity"
+            android:parentActivityName=".AndroidTutorialPart1" />
+        <activity android:name=".FragmentActivity"
+            android:parentActivityName=".MainActivity" />
+    </application>
 
 </manifest>
