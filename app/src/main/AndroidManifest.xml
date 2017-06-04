@@ -25,7 +25,10 @@
         <activity
             android:name=".DisplayMessageActivity"
             android:parentActivityName=".AndroidTutorialPart1" />
-        <activity android:name=".FragmentActivity"
+        <activity
+            android:name=".FragmentActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".SharedPrefActivity"
             android:parentActivityName=".MainActivity" />
     </application>
 

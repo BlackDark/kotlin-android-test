@@ -76,4 +76,9 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, FragmentActivity::class.java)
         startActivity(intent)
     }
+
+    fun openSharedPref(view: View) {
+        val intent = Intent(this, SharedPrefActivity::class.java)
+        startActivity(intent)
+    }
 }

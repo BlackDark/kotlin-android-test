@@ -89,6 +89,15 @@
       android:id="@+id/button4"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:layout_below="@+id/button5"
+      android:layout_centerHorizontal="true"
+      android:onClick="openSharedPref"
+      android:text="Shared" />
+
+  <Button
+      android:id="@+id/button5"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
       android:layout_alignTop="@+id/imageTest"
       android:layout_toEndOf="@+id/imageTest"
       android:onClick="openFragmentActivity"
